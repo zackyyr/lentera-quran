@@ -651,6 +651,21 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   transition: var(--transition-1);
 }
 
+
+.card-content h3 { 
+  font-size: 30px;;
+  
+}
+.card-content .line { 
+  text-decoration: line-through;
+  color: rgba(255, 0, 0, 0.839);
+
+}
+.card-content .prices { 
+  font-size: 30px;
+  color: black;
+}
+
 .course-card .card-title:is(:hover, :focus) { color: var(--kappel); }
 
 .course-card :is(.wrapper, .rating-wrapper, .card-meta-list, .card-meta-item) {
@@ -699,7 +714,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 
 .course-card .card-meta-item .span {
   color: var(--eerie-black-1);
-  font-size: var(--fs-7);
+  font-size: 19px;
 }
 
 .course .btn {
@@ -1216,7 +1231,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 
   .grid-list { grid-template-columns: repeat(4, 1fr); }
 
-  :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  :is(.course) .grid-list { grid-template-columns: repeat(2, 1fr); }
+  :is(.blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
 
